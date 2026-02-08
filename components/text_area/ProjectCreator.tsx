@@ -130,7 +130,7 @@ export function ProjectCreator({ onSubmit }: ProjectCreatorProps) {
     }
 
     return (
-        <div className="min-h-screen bg-transparent flex flex-col items-center justify-center p-4 md:p-6 relative overflow-hidden">
+        <div className="min-h-screen bg-transparent flex flex-col items-center justify-center p-4 md:p-6 relative overflow-x-hidden">
             <div className="absolute inset-0 -z-10 opacity-40 bg-black">
                 <FaultyTerminal
                     scale={1.2}
