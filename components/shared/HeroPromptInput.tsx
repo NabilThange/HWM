@@ -29,18 +29,18 @@ export function HeroPromptInput({ variant = 'landing' }: HeroPromptInputProps) {
 
         setIsSubmitting(true);
         const userMessage = message.trim();
-        
+
         // Generate proper UUID for chat ID
         const chatId = crypto.randomUUID();
-        
+
         // Clear input immediately for better UX
         setMessage('');
-        
+
         // Use startTransition for smoother navigation with View Transitions
         startTransition(() => {
             router.push(`/build/${chatId}?initialPrompt=${encodeURIComponent(userMessage)}`);
         });
-        
+
         setIsSubmitting(false);
     };
 
@@ -52,7 +52,7 @@ export function HeroPromptInput({ variant = 'landing' }: HeroPromptInputProps) {
     };
 
     return (
-        <div 
+        <div
             className="w-full mx-auto px-4"
             style={{ viewTransitionName: 'prompt-input', maxWidth: '800px' } as React.CSSProperties}
         >
@@ -115,7 +115,7 @@ export function HeroPromptInput({ variant = 'landing' }: HeroPromptInputProps) {
                     </div>
                 </div>
             </div>
-            
+
             {variant === 'build' && (
                 <p className="text-muted-foreground text-sm text-center mt-3">
                     Press Enter to create or click Create

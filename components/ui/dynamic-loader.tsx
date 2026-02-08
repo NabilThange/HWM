@@ -70,7 +70,7 @@ const LoaderContent: React.FC<DynamicLoaderProps> = ({
             </DynamicDescription>
           </div>
         </div>
-        
+
         {/* Progress dots */}
         <div className="flex gap-1">
           <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-bounce" style={{ animationDelay: '0ms' }} />

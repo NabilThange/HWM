@@ -24,13 +24,13 @@ export default function LottieLoaderDemo() {
           <p className="text-sm text-neutral-400">
             Used in ContextDrawer (fills entire content area)
           </p>
-          <Button 
+          <Button
             onClick={() => setShowFull(!showFull)}
             variant={showFull ? "destructive" : "default"}
           >
             {showFull ? "Hide" : "Show"} Full Loader
           </Button>
-          
+
           {showFull && (
             <div className="border border-neutral-700 rounded-lg p-8 bg-neutral-800/50 min-h-[300px] flex items-center justify-center">
               <LottieLoader />
@@ -44,13 +44,13 @@ export default function LottieLoaderDemo() {
           <p className="text-sm text-neutral-400">
             Small animation for inline use
           </p>
-          <Button 
+          <Button
             onClick={() => setShowCompact(!showCompact)}
             variant={showCompact ? "destructive" : "default"}
           >
             {showCompact ? "Hide" : "Show"} Compact Loader
           </Button>
-          
+
           {showCompact && (
             <div className="border border-neutral-700 rounded-lg p-8 bg-neutral-800/50 min-h-[200px] flex items-center justify-center">
               <CompactLottieLoader />
