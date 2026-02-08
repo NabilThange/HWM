@@ -62,8 +62,8 @@ export function CodeBlock({ files, projectName = "Generated Code", onViewAll }: 
                                 key={index}
                                 onClick={() => setActiveFileIndex(index)}
                                 className={`px-4 py-2 text-xs font-mono border-r border-[#404040] flex items-center gap-2 transition-colors ${activeFileIndex === index
-                                        ? 'bg-[#1e1e1e] text-white'
-                                        : 'text-gray-500 hover:bg-[#2d2d2d] hover:text-gray-300'
+                                    ? 'bg-[#1e1e1e] text-white'
+                                    : 'text-gray-500 hover:bg-[#2d2d2d] hover:text-gray-300'
                                     }`}
                             >
                                 <FileCode className="w-3 h-3" />

@@ -221,17 +221,17 @@ export default function DynamicLoaderDemo() {
           <p className="text-sm text-neutral-400">
             Cycles: compact → large → medium
           </p>
-          <Button 
+          <Button
             onClick={() => setShowAnimated(!showAnimated)}
             variant={showAnimated ? "destructive" : "default"}
           >
             {showAnimated ? "Hide" : "Show"} Basic Loader
           </Button>
-          
+
           {showAnimated && (
             <div className="border border-neutral-700 rounded-lg p-4 bg-neutral-800/50 min-h-[200px] flex items-center justify-center">
               <DynamicIslandProvider initialSize="default">
-                <AnimatedDynamicLoader 
+                <AnimatedDynamicLoader
                   title="Processing..."
                   description="AI is working on your project"
                 />
@@ -246,17 +246,17 @@ export default function DynamicLoaderDemo() {
           <p className="text-sm text-neutral-400">
             Used in ContextDrawer & WiringDrawer (animated for better UX!)
           </p>
-          <Button 
+          <Button
             onClick={() => setShowStatic(!showStatic)}
             variant={showStatic ? "destructive" : "default"}
           >
             {showStatic ? "Hide" : "Show"} Production Loader
           </Button>
-          
+
           {showStatic && (
             <div className="border border-neutral-700 rounded-lg p-4 bg-neutral-800/50 min-h-[200px] flex items-center justify-center">
               <DynamicIslandProvider initialSize="default">
-                <StaticDynamicLoader 
+                <StaticDynamicLoader
                   title="Generating Content..."
                   description="The AI is creating your context"
                 />
@@ -271,13 +271,13 @@ export default function DynamicLoaderDemo() {
           <p className="text-sm text-neutral-400">
             All states: compact → large → tall → long → medium
           </p>
-          <Button 
+          <Button
             onClick={() => setShowAdvanced(!showAdvanced)}
             variant={showAdvanced ? "destructive" : "default"}
           >
             {showAdvanced ? "Hide" : "Show"} Advanced Loader
           </Button>
-          
+
           {showAdvanced && (
             <div className="border border-neutral-700 rounded-lg p-4 bg-neutral-800/50 min-h-[250px] flex items-center justify-center">
               <DynamicIslandProvider initialSize="default">
