@@ -189,7 +189,7 @@ export class ToolExecutor {
                 // Create new version without the deleted file
                 const version = await ArtifactService.createVersion({
                     artifact_id: result.artifact.id,
-                    version_number: result.artifact.current_version + 1,
+                    version_number: (result.artifact.current_version || 0) + 1,
                     content_json: { files: filteredFiles },
                     change_summary: `Deleted ${path}`
                 });

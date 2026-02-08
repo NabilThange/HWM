@@ -546,7 +546,7 @@ Examples:
                     'BOM': 'bomGenerator',
                     'CODE': 'codeGenerator',
                     'WIRING': 'wiringDiagram',
-                    'DEBUG': 'debugger',
+
                     'DATASHEET': 'datasheetAnalyzer',
                     'BUDGET': 'budgetOptimizer',
                     'CHAT': 'conversational'
